@@ -1,0 +1,35 @@
+<div class="card mt-3">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h5>Contact us</h5>
+            </div>
+        </div>
+    </div>
+    <div class="card-body pb-0">
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="card-header">
+                            <th class="text-center">Sr no</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Message</th>
+                            <th class="text-center">Phone no</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of sharedService.conatctUsList;let i=index">
+                                <td class="text-center">{{i+1}}</td>
+                                <td class="text-center">{{item.name}}</td>
+                                <td class="text-center">{{item.email}}</td>
+                                <td class="text-center">{{item.message}}</td>
+                                <td class="text-center">{{item.mobileno}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
